@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AiOuija 
 
-## Getting Started
+**AiOuija** is an LLM-powered virtual Ouija board experience that bridges the gap between modern artificial intelligence and paranormal ritual.
 
-First, run the development server:
+![AiOuija Preview](https://github.com/Rvlndd/ai-ouija/raw/main/public/preview.png) 
 
+<a href="https://youtu.be/y7xVt3C7O3Y?si=s_iVbQ0HFE3xMOYt">
+    Youtube Demo Video
+  </a>
+
+## Concept
+
+AiOuija is an experimental human AI interaction project that explores how atmosphere, pacing, and ambiguity shape the way people respond to machine generated output. Instead of acting like a normal question and answer system, the experience focuses on tension, uncertainty, and narrative suggestion, observing how users naturally project meaning, intent, and personality onto non human responses. It also looks at whether people can feel fear, empathy, or emotional immersion during an interaction they know is artificial, and how design choices can make the presence feel less mechanical and more psychologically real.
+
+
+- **AI Providers**:
+  - **[Mistral AI](https://mistral.ai/)**: Powers the spirit's personality, memory, and cryptic responses using `mistral-large-latest`.
+  - **[Groq](https://groq.com/)**: Speech-to-Text (STT) via Whisper Large V3 Turbo for real-time voice interaction.
+  - **VAD**: [Voice Activity Detection](https://github.com/ricky0123/vad) for seamless hands-free communication.
+
+
+## Setup & Installation
+
+Follow these steps to host your own séance:
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/rvlndd/ai-ouija.git
+cd ai-ouija/my-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Environment Configuration
+Create a `.env.local` file in the `my-app` directory and add your API keys:
+```env
+MISTRAL_API_KEY=your_mistral_api_key_here
+GROQ_API_KEY=your_groq_api_key_here
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Run the development server
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) with your browser to begin.
 
-## Learn More
+## Credits
+Created by **RvLnd** 
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<div align="center">
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[![Support me on Ko-fi](https://storage.ko-fi.com/cdn/kofi6.png?v=6)](https://ko-fi.com/M4M7YKEJR)
 
-## Deploy on Vercel
+*Disclaimer: This is a psychological experiment and entertainment tool. No actual spirits were harmed in the making of this software. Ye i know u guys already know this but just to make sure lol*
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+</div>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

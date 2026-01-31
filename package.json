@@ -8,9 +8,22 @@
     "start": "next start"
   },
   "dependencies": {
+    "@mistralai/mistralai": "^1.13.0",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "@ricky0123/vad-react": "^0.0.36",
+    "@types/three": "^0.182.0",
+    "@use-gesture/react": "^10.3.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.29.2",
+    "groq-sdk": "^0.37.0",
+    "lucide-react": "^0.563.0",
     "next": "16.1.6",
+    "onnxruntime-web": "^1.23.2",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "tailwind-merge": "^3.4.0",
+    "three": "^0.182.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
